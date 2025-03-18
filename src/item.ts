@@ -10,7 +10,7 @@ abstract class Item{
     }
 
     exibirdetalhes(): string {
-        return `ID: ${this.id} | Título: ${this.titulo} | Ano: ${this.ano}`;
+        return '0';
     }
 }
 

@@ -11,6 +11,10 @@ class Livro extends Item{
         this.editora = editora;
         this.numeroPaginas = numeroPaginas;
     }
+
+    exibirdetalhes(): string {
+        return `ID: ${this.id} | Título: ${this.titulo} | Ano: ${this.ano} | Autor: ${this.autor} | Editora: ${this.editora} | Número de páginas: ${this.numeroPaginas}`;
+    }
 }
 
 export {Livro};
