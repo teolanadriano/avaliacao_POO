@@ -1,6 +1,10 @@
 import { Item } from "./item.ts";
-import type { Pesquisavel } from "./pesquisavel.ts";
 
+
+
+export interface Pesquisavel {
+    pesquisar(termo: string): boolean;
+}
 class Biblioteca {
     arrayItens: Item[];
 

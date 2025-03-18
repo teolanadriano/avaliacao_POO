@@ -10,7 +10,7 @@ class Usuario {
     constructor(_id: number, _nome: string, _email: string, _telefone: string, _itensEmprestados: Item[]) {
         this._id = _id;
         this._nome = _nome;
-        this.email = _email; // Usando o setter
+        this.email = _email;
         this._telefone = _telefone;
         this._itensEmprestados = _itensEmprestados;
     }

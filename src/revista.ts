@@ -1,5 +1,5 @@
 import {Item} from "./item.ts";
-import type { Pesquisavel } from "./pesquisavel.ts";
+import type { Pesquisavel } from "./biblioteca.ts";
 
 class Revista extends Item implements Pesquisavel{
     edicao:number;
