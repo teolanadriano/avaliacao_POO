@@ -4,9 +4,9 @@ import type { Pesquisavel } from "./biblioteca.ts";
 class Livro extends Item implements Pesquisavel {
     autor: string;
     editora: string;
-    numeroPaginas: string;
+    numeroPaginas: number;
 
-    constructor(id: number, titulo: string, ano: number, autor: string, editora: string, numeroPaginas: string) {
+    constructor(id: number, titulo: string, ano: number, autor: string, editora: string, numeroPaginas: number) {
         super(id, titulo, ano);
         this.autor = autor;
         this.editora = editora;

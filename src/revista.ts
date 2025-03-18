@@ -21,3 +21,5 @@ class Revista extends Item implements Pesquisavel{
         );
     }
 }
+
+export {Revista};

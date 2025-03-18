@@ -75,3 +75,5 @@ class Usuario {
         return true;
     }
 }
+
+export {Usuario}
