@@ -11,16 +11,7 @@ class Biblioteca {
     constructor(arrayItens: Item[]) {
         this.arrayItens = arrayItens;
     }
-/*
-    buscarItens(termo: string): Item[] {
-        return this.arrayItens.filter(item => {
-            if ("pesquisar" in item) {
-                return (item as Pesquisavel).pesquisar(termo);
-            }
-            return false;
-        });
-    }
-    */
+
     buscarItens(termo: string): Item[] {
         return this.arrayItens.filter((item): item is Item & Pesquisavel => 
             "pesquisar" in item && typeof item.pesquisar === "function" && item.pesquisar(termo)
