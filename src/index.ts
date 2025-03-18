@@ -1,5 +1,3 @@
-console.log("------------------------------------------------------------------------------");
-
 // --- Importação das classes
 import {Usuario} from "./usuario.ts";
 import {Livro} from "./livro.ts";
