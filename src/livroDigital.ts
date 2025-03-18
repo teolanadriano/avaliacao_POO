@@ -11,4 +11,8 @@ class LivroDigital extends Livro{
         this.tamanhoMB = tamanhoMB;
         this.linkDownload = linkDownload;
     }
+
+    exibirdetalhes(): string {
+        return `ID: ${this.id} | Título: ${this.titulo} | Ano: ${this.ano} | Autor: ${this.autor} | Editora: ${this.editora} | Número de páginas: ${this.numeroPaginas} | formato: ${this.formato} | Tamanho (MB): ${this.tamanhoMB} | link Download: ${this.linkDownload} `;
+    }
 }
